@@ -1,0 +1,64 @@
+.cs-footer{
+    width: 100%;
+    height: 200px;
+
+}
+.footer-driver {
+    // background-color: #555;
+    // height: 20px;
+    margin: 150px auto 10px auto;  // ✅ 上、左右居中、下
+    width: 80%;
+}
+.footer-driver-sec {
+    // background-color: #555;
+    // height: 20px;
+    margin: 10px auto 10px auto;  // ✅ 上、左右居中、下
+    width: 80%;
+}  
+
+:host ::ng-deep .custom-divider {
+    border-top-width: 3px;        // 横向分割线的粗细
+    border-top-style: solid;      // 实线 / 虚线
+    border-color: #00569D;        // 分割线颜色
+  }
+  
+
+.footer-links{
+    // 居中
+    width: 80%;
+    text-align: left;
+    // 颜色: #00569D
+    color: #000000;
+    margin: 0px auto 0px auto;  // ✅ 上、左右居中、下
+
+}
+  
+
+.footer-links-title{
+    // 加粗
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-links-content{
+    // 间隔20px
+    // 左对齐
+    // 未被选中时为黑色
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: left;
+    color: #000000;
+    // 选中后是 #00569D
+    &:hover{
+        color: #00569D;
+    }
+}
+
+.footer-copyright{
+    // 居中
+    width: 80%;
+    text-align: center;
+    // 颜色: #00569D
+    color: #000000;
+    margin: 0px auto 0px auto;  // ✅ 上、左右居中、下
+}

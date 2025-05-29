@@ -1,0 +1,79 @@
+
+<!-- 上部分，分为[[logo, title]]和[[search]]两部分 -->
+<div class="cs-header">
+  <div nz-row [nzJustify]="'center'" class="cs-header-top">
+    <div nz-col nzSpan="16"  class="cs-header-logo">
+      <img style="width: 436px; height: 70px;" src="assets/logo.png" alt="INAT 核技术研究所" />
+    </div>
+    <div nz-col nzSpan="8" class="cs-header-search">
+    </div>
+  </div>
+  
+    <!-- 下面是导航栏 -->
+    <!-- 导航栏结构为：
+    - 首页
+    + 课题组简介[可展开]
+        - xxx
+    + 研究人员[可展开]
+        - xxx
+    + 研究成果[可展开]
+        - xxx
+    + 课题组建设[可展开]
+        - xxx
+    + 加入我们[可展开]
+    -->
+    <div nz-row [nzJustify]="'center'" class="cs-header-nav">
+        <!-- 使用 ng-zorro 导航栏 -->
+        <ul nz-menu nzMode="horizontal" class="cs-nav-menu">
+          
+          <li nz-menu-item (click)="goToPage('')">
+            首页
+          </li>
+      
+          <li nz-submenu nzTitle="课题组简介" (click)="goToPage('introduction/intro')">
+            <ul>
+              <li nz-menu-item (click)="goToPage('introduction/intro')">课题组概况</li>
+              <li nz-menu-item (click)="goToPage('introduction/direction')">研究方向</li>
+              <li nz-menu-item (click)="goToPage('introduction/projects')">承担项目</li>
+            </ul>
+          </li>
+      
+          <li nz-submenu nzTitle="研究人员" (click)="goToPage('members/teachers')">
+            <ul>
+              <li nz-menu-item (click)="goToPage('members/teachers')">教师队伍</li>
+              <li nz-menu-item (click)="goToPage('members/phd')">博士研究生</li>
+              <li nz-menu-item (click)="goToPage('members/master')">硕士研究生</li>
+              <li nz-menu-item (click)="goToPage('members/alumni')">毕业生</li>
+            </ul>
+          </li>
+      
+          <li nz-submenu nzTitle="研究成果" (click)="goToPage('results/papers')">
+            <ul>
+              <li nz-menu-item (click)="goToPage('results/papers')">文章</li>
+              <li nz-menu-item (click)="goToPage('results/patents')">专利</li>
+              <li nz-menu-item (click)="goToPage('results/honors')">荣誉</li>
+            </ul>
+          </li>
+      
+          <li nz-submenu nzTitle="学术活动" (click)="goToPage('activity/meeting')">
+            <ul>
+              <li nz-menu-item (click)="goToPage('activity/meeting')">会议</li>
+            </ul>
+          </li>
+      
+          <li nz-submenu nzTitle="招生招聘" (click)="goToPage('join/join')">
+          </li>
+            
+          <li nz-submenu nzTitle="团队建设" (click)="goToPage('construction/news')">
+            <ul>
+              <li nz-menu-item (click)="goToPage('construction/news')">团建活动</li>
+
+            </ul>
+          </li>
+      
+        </ul>
+      </div>
+      
+</div>
+
+    

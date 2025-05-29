@@ -1,0 +1,24 @@
+<div class="cs-layout-with-sidebar">
+  <div nz-row class="cs-layout-with-sidebar-content">
+    
+    <!-- 左侧菜单栏 -->
+    <div nz-col nzSpan="5" class="cs-layout-with-sidebar-left">
+      <div class="side-menu-title">{{ menuTitle }}</div>
+      <ul class="side-menu">
+        <li *ngFor="let item of menuList"
+            [class.active]="currentPath === item.path"
+            (click)="handleMenuClick(item)">
+            <span nz-icon nzType="double-right" class="arrow-icon" nzTheme="outline"></span>
+          {{ item.label }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- 右侧内容展示区域 -->
+    <div nz-col nzSpan="19" class="cs-layout-with-sidebar-right">
+      <!-- 使用 cs-frame 显示动态加载的 HTML 页面 -->
+      <!-- <cs-frame [src]="src"></cs-frame> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+<!-- 中心图 -->
+<div class="center-pic">
+  <img src="assets/images/center-picture.png" alt="center-pic" />
+</div>
+
+<!-- 简介部分 -->
+<div class="intro-content">
+  <div class="intro-left-pic">
+    <!-- 放置一张图片 -->
+    <img src="assets/images/u14.png" alt="member-pic" />
+  </div>
+  <div class="intro-right-text">
+    <div class="intro-title">核分析技术课题组</div>
+    <div class="intro-description">
+      本课题组专注于先进核技术的研究，包括核探测、核材料分析、放射性废物处理等多个方向。团队由多名教授、博士及硕士组成，致力于解决核能发展中的关键科学问题。
+    </div>
+  </div>
+</div>
+
+<!-- 蓝色背景的一行，两列 -->
+<div class="main-results">
+  <nz-row class="result-row blue-row">
+    <!-- 学术活动 -->
+    <nz-col [nzSpan]="12" class="result-column">
+      <div class="research-title">
+        <span>
+          <i nz-icon nzType="read" nzTheme="outline"></i>
+          学术活动
+        </span>
+        <a class="more-link" (click)="goToMore('activities')">更多</a>
+      </div>
+      <ul class="research-list">
+        <li *ngFor="let activity of activityList" (click)="viewItem(activity)">
+          <i nz-icon nzType="calendar" nzTheme="outline"></i> {{ activity.title }}
+        </li>
+      </ul>
+    </nz-col>
+
+    <!-- 团队建设 -->
+    <nz-col [nzSpan]="12" class="result-column">
+      <div class="research-title">
+        <span>
+          <i nz-icon nzType="team" nzTheme="outline"></i>
+          团队建设
+        </span>
+        <a class="more-link" (click)="goToMore('team')">更多</a>
+      </div>
+      <ul class="research-list">
+        <li *ngFor="let member of teamList" (click)="viewItem(member)">
+          <i nz-icon nzType="user" nzTheme="outline"></i> {{ member.title }}
+        </li>
+      </ul>
+    </nz-col>
+  </nz-row>
+</div>
+
+
+<br />
+
+<!-- 白色背景的一行，两列 -->
+<!-- 研究成果 标题部分 -->
+<div class="section-header">
+  <hr class="section-divider" />
+  <div class="section-title">
+    <img src="assets/images/u5.png" alt="研究成果图标" />
+    <span>研究成果</span>
+  </div>
+</div>
+
+<!-- 白色背景的一行，两列 -->
+<div class="research-results">
+  <nz-row class="result-row white-row">
+    <!-- 学术论文 -->
+    <nz-col [nzSpan]="12" class="result-column">
+      <div class="research-title">
+        <span>
+          <i nz-icon nzType="book" nzTheme="outline"></i>
+          学术论文
+        </span>
+        <a class="more-link" (click)="goToMore('papers')">更多</a>
+      </div>
+      <ul class="research-list">
+        <li *ngFor="let paper of paperList" (click)="viewItem(paper)">
+          <i nz-icon nzType="file-text" nzTheme="outline"></i> {{ paper.title }}
+        </li>
+      </ul>
+    </nz-col>
+
+    <!-- 专利成果 -->
+    <nz-col [nzSpan]="12" class="result-column">
+      <div class="research-title">
+        <span>
+          <i nz-icon nzType="deployment-unit" nzTheme="outline"></i>
+          专利成果
+        </span>
+        <a class="more-link" (click)="goToMore('patents')">更多</a>
+      </div>
+      <ul class="research-list">
+        <li *ngFor="let patent of patentList" (click)="viewItem(patent)">
+          <i nz-icon nzType="file-protect" nzTheme="outline"></i> {{ patent.title }}
+        </li>
+      </ul>
+    </nz-col>
+  </nz-row>
+</div>

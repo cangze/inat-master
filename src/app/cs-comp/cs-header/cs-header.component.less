@@ -1,0 +1,79 @@
+// 
+.cs-header {
+    // 宽度 100%
+    width: 100%;
+    height: 200px;
+}
+.cs-header-top{
+    width: 100%;
+    height: 130px;
+    // 颜色：#00569D
+    background-color: #ffffff;
+}
+.cs-header-logo {
+    // 居中显示
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cs-header-nav {
+    // 颜色：#00569D
+    background-color: #00569D;
+}
+
+:host ::ng-deep .cs-nav-menu {
+    background-color: #00569D;   // 导航栏背景色
+    line-height: 60px;           // 菜单高度（影响垂直居中）
+    
+    .ant-menu-item , .ant-menu-submenu-title{
+        font-size: 18px;           // 字体大小
+        color: #fff;               // 字体颜色
+        padding: 0 24px;           // 菜单间距
+    }
+  
+    .ant-menu-item-selected {
+      background-color: #00569D; // 选中项背景色
+      color: #ffffff;            // 选中项字体颜色
+    }
+  
+    .ant-menu-submenu-arrow {
+      color: #fff;               // 子菜单箭头颜色
+    }
+  
+    .ant-menu-submenu {
+      color: #fff;
+    }
+  
+    // 子菜单的下拉背景色
+    .ant-menu-submenu-popup {
+      background-color: #004080;
+    }
+  
+    .ant-menu-submenu li.ant-menu-item {
+      color: #fff;
+    }
+}
+
+:host ::ng-deep .cs-nav-menu {
+    display: flex;          /* 使用flex布局 */
+    justify-content: center;/* 菜单项居中 */
+    white-space: nowrap;    /* 防止菜单项整体换行 */
+}
+
+.cs-header-nav {
+    display: flex;          /* 确保导航栏不换行 */
+    justify-content: center;/* 居中显示菜单 */
+}
+
+.cs-nav-menu li {
+    width: 190px;           /* 固定宽度 */
+    word-wrap: break-word;  /* 允许文字换行 */
+    text-align: center;     /* 文本居中 */
+}
+
+@media screen and (max-width: 768px) {
+    .cs-nav-menu li {
+        width: 45%;          /* 小屏幕下菜单项宽度自适应（百分比） */
+        font-size: 14px;     /* 小屏时缩小字体 */
+    }
+}

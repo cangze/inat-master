@@ -1,0 +1,50 @@
+.cs-layout-with-sidebar-left {
+    margin-top: 3px;
+    background-color: #ffffff;
+    padding: 0;
+  
+    .side-menu-title {
+      font-size: 17px;
+      font-weight: bold;
+      background-color: #00569D;
+      color: #ffffff;
+      padding: 12px 16px;
+    }
+  
+    .side-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      background-color: #e0e0e0;
+  
+      li {
+        padding: 10px 16px;
+        color: black;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+  
+        // 使用 ng-zorro 图标组件
+        .arrow-icon {
+          font-size: 18px;
+          color: #00569D;
+          margin-right: 8px;
+        }
+  
+        &:hover {
+          font-weight: bold;
+        }
+  
+        &.active {
+          font-weight: normal;
+          background-color: transparent;
+  
+          .arrow-icon {
+            color: #ff9000;;
+          }
+        }
+      }
+    }
+  }
