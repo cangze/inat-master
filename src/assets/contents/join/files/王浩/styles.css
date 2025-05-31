@@ -16,7 +16,7 @@
   position:absolute;
   z-index:0;
 }
-#u408_div {
+#u349_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -37,7 +37,7 @@
   letter-spacing:2px;
   color:#484848;
 }
-#u408 {
+#u349 {
   border-width:0px;
   position:absolute;
   left:494px;
@@ -52,19 +52,19 @@
   letter-spacing:2px;
   color:#484848;
 }
-#u408 .text {
+#u349 .text {
   position:absolute;
   align-self:flex-start;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
 }
-#u408_text {
+#u349_text {
   border-width:0px;
   white-space:nowrap;
   text-transform:none;
 }
-#u409_img {
+#u350_img {
   border-width:0px;
   position:absolute;
   left:-2px;
@@ -72,7 +72,7 @@
   width:1105px;
   height:7px;
 }
-#u409 {
+#u350 {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -82,26 +82,26 @@
   display:flex;
   color:#888888;
 }
-#u409 .text {
+#u350 .text {
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u409_text {
+#u350_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
   visibility:hidden;
 }
-#u410_div {
+#u351_div {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
   width:428px;
-  height:441px;
+  height:557px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -113,31 +113,31 @@
   font-style:normal;
   font-size:16px;
 }
-#u410 {
+#u351 {
   border-width:0px;
   position:absolute;
   left:673px;
   top:162px;
   width:428px;
-  height:441px;
+  height:557px;
   display:flex;
   font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;
   font-style:normal;
   font-size:16px;
 }
-#u410 .text {
+#u351 .text {
   position:absolute;
   align-self:flex-start;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
 }
-#u410_text {
+#u351_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
 }
-#u411_img {
+#u352_img {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -145,7 +145,7 @@
   width:210px;
   height:300px;
 }
-#u411 {
+#u352 {
   border-width:0px;
   position:absolute;
   left:160px;
@@ -154,14 +154,14 @@
   height:300px;
   display:flex;
 }
-#u411 .text {
+#u352 .text {
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u411_text {
+#u352_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;

@@ -16,13 +16,13 @@
   position:absolute;
   z-index:0;
 }
-#u96_div {
+#u75_div {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
   width:124px;
-  height:39px;
+  height:27px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -36,13 +36,13 @@
   font-size:29px;
   letter-spacing:2px;
 }
-#u96 {
+#u75 {
   border-width:0px;
   position:absolute;
   left:4px;
   top:0px;
   width:124px;
-  height:39px;
+  height:27px;
   display:flex;
   font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;
   font-weight:700;
@@ -50,19 +50,19 @@
   font-size:29px;
   letter-spacing:2px;
 }
-#u96 .text {
+#u75 .text {
   position:absolute;
   align-self:flex-start;
   padding:0px 0px 0px 0px;
   box-sizing:border-box;
   width:100%;
 }
-#u96_text {
+#u75_text {
   border-width:0px;
   white-space:nowrap;
   text-transform:none;
 }
-#u97_img {
+#u76_img {
   border-width:0px;
   position:absolute;
   left:-2px;
@@ -70,7 +70,7 @@
   width:1105px;
   height:7px;
 }
-#u97 {
+#u76 {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -80,14 +80,14 @@
   display:flex;
   color:#888888;
 }
-#u97 .text {
+#u76 .text {
   position:absolute;
   align-self:center;
   padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
-#u97_text {
+#u76_text {
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
