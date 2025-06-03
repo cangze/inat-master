@@ -44,6 +44,15 @@
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
+    <script>
+      function postHeight() {
+        const height = document.body.scrollHeight || document.documentElement.scrollHeight;
+        window.parent.postMessage({ iframeHeight: height }, '*');
+      }
+    
+      window.addEventListener('load', postHeight);
+      window.addEventListener('resize', postHeight);
+    </script>
   </head>
   <body>
     <div id="base" class="">
